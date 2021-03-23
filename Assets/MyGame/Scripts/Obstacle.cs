@@ -10,7 +10,6 @@ private void Awake()
     rb = GetComponent<Rigidbody2D>();
 }
 
-// Update is called once per frame
 void Update()
 {
     //if obstacle's position x is < -15f it will be destroyed
@@ -23,15 +22,10 @@ void Update()
         {
             Destroy(gameObject);
         }
-
-    }
-
-
+}
 
 private void FixedUpdate()
 {
-
     rb.velocity = Vector2.left * MoveSpeed;
-
 }
 }
